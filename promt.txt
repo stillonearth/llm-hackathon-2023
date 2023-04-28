@@ -1,4 +1,4 @@
-INSTRUCTION: Given dress description and JSON, select one entry from json top fields that are most similar to description. 
+INSTRUCTION: Given dress description and JSON, select most appropriate dress options (only one option for each) for bodice, sleeve, skirt, skirt_length, lace_overlay_on_bust, lace_overlay_on_skirt, extras_collar and extras_stash
 
 OUTPUT FORMAT: `{"bodice": id, "sleeve": id, "skirt": id, "skirt_length": id, "lace_overlay_on_bust": id, "lace_overlay_on_skirt": id, "extras_collar": id, "extras_stash": id}`
 
