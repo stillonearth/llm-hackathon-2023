@@ -1,0 +1,122 @@
+INSTRUCTION: Given dress description and JSON, select one entry from json top fields that are most similar to description. 
+
+OUTPUT FORMAT: `{"bodice": id, "sleeve": id, "skirt": id, "skirt_length": id, "lace_overlay_on_bust": id, "lace_overlay_on_skirt": id, "extras_collar": id, "extras_stash": id}`
+
+OUTPUT: Don't include any text except JSON.
+
+DESCRIPTION: I want a dress that is similar to traditional Mexiacan
+
+JSON: `{
+  "bodice": [
+    {
+      "name": "Classic Tiffany",
+      "id": "Bodice-ClassicTiffany-Plain"
+    },
+    {
+      "name": "Sweetheart",
+      "id": "Bodice-Sweetheart-Plain"
+    },
+    {
+      "name": "Classic HighBack Scoop",
+      "id": "Bodice-ClassicHighBackScoop-Plain"
+    },
+    {
+      "name": "Classic LowBack Scoop",
+      "id": "Bodice-ClassicLowBackScoop-Plain"
+    },
+    {
+      "name": "Classic Cupid's Bow",
+      "id": "Bodice-ClassicCupidsBow-Plain"
+    },
+    {
+      "name": "Bustier",
+      "id": "Bodice-Bustier-Plain"
+    },
+    {
+      "name": "Darted Tiffany",
+      "id": "Bodice-DartedTiffany-Plain"
+    },
+    {
+      "name": "VNeck",
+      "id": "Bodice-VNeck-Plain"
+    },
+    {
+      "name": "Darted HighBack Scoop",
+      "id": "Bodice-DartedHighBackScoop-Plain"
+    },
+    {
+      "name": "Darted LowBack Scoop",
+      "id": "Bodice-DartedLowBackScoop-Plain"
+    },
+    {
+      "name": "Darted Cupid's Bow",
+      "id": "Bodice-DartedCupidsBow-Plain"
+    },
+    {
+      "name": "HalfLace VNeck",
+      "id": "Bodice-HalfLaceVNeck-Plain"
+    },
+    {
+      "name": "Princess",
+      "id": "Bodice-Princess-Plain"
+    },
+    {
+      "name": "Grace",
+      "id": "Bodice-Grace-Plain"
+    },
+    {
+      "name": "Bustier Grace",
+      "id": "Bodice-BustierGrace-Plain"
+    },
+    {
+      "name": "Bandeau Grace",
+      "id": "Bodice-BandeauGrace-Plain"
+    }
+  ],
+  "sleeves": [
+    { "name": "Sleeveless", "id": "Sleeves-Sleeveless" },
+    { "name": "Cap", "id": "Sleeves-Cap" },
+    { "name": "Short", "id": "Sleeves-Short" },
+    { "name": "Elbow", "id": "Sleeves-Elbow" },
+    { "name": "3/4 Length", "id": "Sleeves-34Length" },
+    { "name": "Full Length", "id": "Sleeves-FullLength" }
+  ],
+  "skirts": [
+    { "name": "Circle", "id": "Skirt-Circle-Knee-Plain" },
+    { "name": "3/4 Circle", "id": "Skirt-34Circle-Knee-Plain" },
+    { "name": "1/2 Circle", "id": "Skirt-12Circle-Knee-Plain" },
+    { "name": "Dipped Hem", "id": "Skirt-DippedHem-Knee-Plain" },
+    { "name": "Pleated", "id": "Skirt-Pleated-Knee-Plain" },
+    { "name": "Panelled", "id": "Skirt-Panelled-Knee-Plain" },
+    { "name": "Fitted ALine", "id": "Skirt-FittedALine-Knee-Plain" },
+    { "name": "Pencil", "id": "Skirt-Pencil-Knee-Plain" }
+  ],
+  "skirt_lengths": [
+    { "id": "SkirtLength-Knee", "name": "Knee Length" },
+    { "id": "SkirtLength-Tea", "name": "Tea Length" },
+    { "id": "SkirtLength-Ballerina", "name": "Ballerina Length" },
+    { "id": "SkirtLength-Full", "name": "Full Length" }
+  ],
+  "lace_overlay_on_bust": [
+    { "id": "LaceOverlay-Bust-Plain", "name": "No thanks" },
+    { "id": "LaceOverlay-Bust-SmallLace", "name": "Small Lace" },
+    { "id": "LaceOverlay-Bust-LargeLace", "name": "Large Lace" }
+  ],
+  "lace_overlay_on_skirt": [
+    { "id": "LaceOverlay-Skirt-Plain", "name": "No thanks" },
+    { "id": "LaceOverlay-Skirt-SmallLace", "name": "Small Lace" },
+    { "id": "LaceOverlay-Skirt-LargeLace", "name": "Large Lace" }
+  ],
+  "extras_collar": [
+    { "id": "Collar-Plain", "name": "No thanks" },
+    { "id": "Collar-SmallPeterPan", "name": "Small Peter Pan Collar" },
+    { "id": "Collar-LargePeterPan", "name": "Large Peter Pan Collar" },
+    { "id": "Collar-Roll", "name": "Roll Collar" }
+  ],
+  "extras_stash": [
+    { "id": "Collar-Plain", "name": "No thanks" },
+    { "id": "Sash-CentreBow", "name": "Sash with Centre Bow" },
+    { "id": "Sash-CentreGather", "name": "Sash with Centre Gather" }
+  ]
+}
+`
