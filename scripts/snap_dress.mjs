@@ -66,7 +66,7 @@ import minimist from 'minimist';
     const screenshotBuffer = await page.screenshot({ clip });
 
     // Do something with the screenshot, like save it to a file
-    fs.writeFileSync('./tmp/screenshot.png', screenshotBuffer);
+    fs.writeFileSync('./tmp/' + argv.uuid + '/screenshot.png', screenshotBuffer);
 
     await browser.close();
 })();
